@@ -16,10 +16,6 @@
 
 * vite2 + ts + vue3
 
-## 构建版本
-
-* es **nutui.es.js**
-* umd **nutui.umd.js**
 
 ## 安装使用
 
