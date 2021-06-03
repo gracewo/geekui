@@ -23,13 +23,13 @@
 
 ## 安装使用
 
-具体安装使用方法请参考 NutUI 官网 https://nutui.jd.com
+具体安装使用方法请参考 NutUI 官网 
 
 ## ⌨️ 本地开发
 
 ```bash
-$ git clone http://gitlab.bailitop.cn/chenruijun/geekui.git
-$ cd nutui
+$ git clone https://github.com/gracewo/geekui.git
+$ cd geekui
 $ npm install
 $ npm run dev
 ```
