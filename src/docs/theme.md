@@ -1,6 +1,6 @@
 # 主题定制
 
-NutUI 默认提供一套 UI 主题，同时允许在一定程度上定制新的主题，以满足业务的多样化视觉需求。
+GeekUI 默认提供一套 UI 主题，同时允许在一定程度上定制新的主题，以满足业务的多样化视觉需求。
 
 <br/>
 
@@ -10,7 +10,7 @@ NutUI 默认提供一套 UI 主题，同时允许在一定程度上定制新的�
 
 ## 样式变量
 
-NutUI 的样式是基于 **[SCSS](https://sass-lang.com/)** 开发的，定义了一套默认样式变量，定制主题就是编辑这个变量列表。
+GeekUI 的样式是基于 **[SCSS](https://sass-lang.com/)** 开发的，定义了一套默认样式变量，定制主题就是编辑这个变量列表。
 
 > 现阶段需要开发者手动配置，可视化生成配置目前正在开发中。
 
@@ -25,11 +25,11 @@ $primary-color-end: #fa6419;
 
 > 在主题定制场景下，项目中引用组件时，需要引入 **SCSS** 文件，而不是 **CSS** 文件。
 
-需要引入 **nutui.scss** 文件
+需要引入 **geekui.scss** 文件
 
 ```javascript
-import NutUI from '@nutui/nutui';
-import "@nutui/nutui/dist/styles/themes/default.scss";
+import Geek from 'geek';
+import "geek/dist/styles/themes/default.scss";
 ```
 
 ## 定制主题
@@ -95,4 +95,4 @@ module.exports = {
 }
 ```
 
-> @nutui/nutui 多种模式（vite 、vue/cli、cdn、ts）使用示例 [Demo](https://github.com/jdf2e/nutui-demo)
+> geekui 多种模式（vite 、vue/cli、cdn、ts）使用示例 [Demo](https://github.com/jdf2e/nutui-demo)

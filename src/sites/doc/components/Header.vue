@@ -2,7 +2,7 @@
   <!-- <div class="doc-header" :style="{ background: themeColor === 'red' ? headerBg : themeColor }" :class="`doc-header-${data.theme}`"> -->
   <div class="doc-header" :class="themeName()">
     <div class="header-logo">
-      <a class="logo-link" href="#"></a>
+      <a class="logo-link" href="#">Geek</a>
       <span class="logo-border"></span>
     </div>
     <div class="header-nav">
@@ -29,7 +29,7 @@
               {{ header[3].cName }}
             </router-link>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <div
               @focus="handleFocus"
               @focusout="handleFocusOut"
@@ -55,12 +55,12 @@
                 </div>
               </transition>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a
               class="user-link"
               target="_blank"
-              href="https://github.com/jdf2e/nutui"
+              href="https://github.com/gracewo/geekui"
             ></a>
           </li>
         </ul>
@@ -159,12 +159,15 @@ export default defineComponent({
     height: 64px;
     .logo-link {
       display: inline-block;
-      width: 120px;
+      width: 20px;
       height: 46px;
       vertical-align: middle;
       position: absolute;
       top: 50%;
       margin-top: -23px;
+      padding-left: 20px;
+      font-size: 22px;
+      line-height: 46px;
     }
     .logo-border {
       display: inline-block;
@@ -185,7 +188,7 @@ export default defineComponent({
     min-width: 900px;
     padding: 0 40px;
     .nav-box {
-      margin-right: 140px;
+      // margin-right: 140px;
       .nav-list {
         min-width: 445px;
         display: flex;
@@ -283,8 +286,8 @@ export default defineComponent({
     .header {
       &-logo {
         .logo-link {
-          // background: url('../../assets/images/logo-header-white.png') no-repeat
-          //   center/100%;
+          background: url('../../assets/images/logo-red.png') no-repeat center/100%;
+          color: #fff;
         }
         .logo-border {
           background: $theme-red-border;
@@ -362,8 +365,8 @@ export default defineComponent({
     .header {
       &-logo {
         .logo-link {
-          background: url('../../assets/images/logo-header-red.png') no-repeat
-            center/100%;
+          background: url('../../assets/images/logo-red.png') no-repeat center/100%;
+          color: #000;
         }
         .logo-border {
           background: $theme-white-border;
@@ -441,8 +444,8 @@ export default defineComponent({
     .header {
       &-logo {
         .logo-link {
-          background: url('../../assets/images/logo-header-red.png') no-repeat
-            center/100%;
+          background: url('../../assets/images/logo-red.png') no-repeat center/100%;
+          color: #fff;
         }
         .logo-border {
           background: $theme-black-border;

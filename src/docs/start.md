@@ -7,11 +7,8 @@
 #### NPM 安装
 
 ```bash
-# Vue2 项目
-npm i @nutui/nutui -S
-
 # Vue3 项目
-npm i @nutui/nutui@beta -S
+npm i geek -S
 ```
 
 #### CDN 安装使用示例

@@ -1,7 +1,7 @@
 <template>
   <div v-if="title != '/'" id="nav">
     <div class="back" @click="goBack">
-      <nut-icon name="left"></nut-icon>
+      <gk-icon name="left"></gk-icon>
     </div>
     {{ title }}
   </div>
@@ -14,7 +14,7 @@ import { isMobile } from '@/sites/assets/util';
 export default defineComponent({
   name: 'app',
   setup() {
-    const title = ref('NutUI');
+    const title = ref('GeekUI');
     // 获取当前路由
     const route = useRoute();
     const router = useRouter();
@@ -48,13 +48,19 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+html,body{
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+}
 #app {
   background: #fff;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-
   #nav {
     position: fixed;
     z-index: 10;

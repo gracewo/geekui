@@ -8,7 +8,7 @@ export default create({
   props: {
     name: { type: String, default: '' },
     size: { type: [String, Number], default: '' },
-    classPrefix: { type: String, default: 'nutui-iconfont' },
+    classPrefix: { type: String, default: 'geekui-iconfont' },
     color: { type: String, default: '' },
     tag: { type: String as PropType<keyof HTMLElementTagNameMap>, default: 'i' }
   },

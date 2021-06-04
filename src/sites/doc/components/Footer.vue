@@ -1,11 +1,9 @@
 <template>
   <div class="doc-footer" :class="`doc-footer-${themeColor}`">
     <div class="doc-footer-content">
-      <div class="doc-footer-list">
-        <img
-          class="doc-footer-logo"
-          src="../../assets/images/logo-header-red.png"
-        />
+      <div class="doc-footer-list doc-footer-logobox">
+        <img class="doc-footer-logo" src="../../assets/images/logo-red.png" />
+        <span class="doc-footer-name">GeekUI</span>
       </div>
       <div class="doc-footer-list">
         <h4 class="doc-footer-title">相关资源</h4>
@@ -192,8 +190,18 @@ export default defineComponent({
         margin-right: 65px;
       }
     }
+    &-logobox{
+      display: flex;
+      align-items: center;
+    }
     &-logo {
       margin-top: 8px;
+      margin-right: 5px;
+      width: 20px;
+    }
+    &-name{
+      font-size: 20px;
+      color: #fff;
     }
     &-title {
       margin-bottom: 24px;
@@ -208,7 +216,7 @@ export default defineComponent({
       text-align: left;
       cursor: pointer;
       .sub-link {
-        // cursor: pointer;
+        cursor: pointer;
       }
     }
     &-desc {

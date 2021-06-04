@@ -1,4 +1,4 @@
-.nut-button {
+.gk-button {
   position: relative;
   display: inline-block;
   flex-shrink: 0;
@@ -87,27 +87,27 @@
   &--plain {
     background: $button-plain-background-color;
 
-    &.nut-button--primary {
+    &.gk-button--primary {
       color: $button-primary-border-color;
       border-color: $button-primary-border-color;
     }
 
-    &.nut-button--info {
+    &.gk-button--info {
       color: $button-info-border-color;
       border-color: $button-info-border-color;
     }
 
-    &.nut-button--success {
+    &.gk-button--success {
       color: $button-success-border-color;
       border-color: $button-success-border-color;
     }
 
-    &.nut-button--danger {
+    &.gk-button--danger {
       color: $button-danger-border-color;
       border-color: $button-danger-border-color;
     }
 
-    &.nut-button--warning {
+    &.gk-button--warning {
       color: $button-warning-border-color;
       border-color: $button-warning-border-color;
     }

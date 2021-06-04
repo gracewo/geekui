@@ -1,8 +1,8 @@
 <template>
   <view :class="classes" :style="getStyle" @click="handleClick">
-    <view class="nut-button__warp">
-      <nut-icon class="nut-icon-loading" v-if="loading"></nut-icon>
-      <nut-icon :class="icon" v-if="icon && !loading" :name="icon"></nut-icon>
+    <view class="gk-button__warp">
+      <gk-icon class="gk-icon-loading" v-if="loading"></gk-icon>
+      <gk-icon :class="icon" v-if="icon && !loading" :name="icon"></gk-icon>
       <view :class="{ text: icon || loading }" v-if="$slots.default">
         <slot></slot>
       </view>
@@ -15,13 +15,7 @@ import { PropType, CSSProperties, toRefs, computed } from 'vue';
 import { createComponent } from '@/utils/create';
 const { componentName, create } = createComponent('button');
 
-export type ButtonType =
-  | 'default'
-  | 'primary'
-  | 'info'
-  | 'success'
-  | 'warning'
-  | 'danger';
+export type ButtonType = 'default' | 'primary' | 'info' | 'success' | 'warning' | 'danger';
 export type ButtonSize = 'large' | 'normal' | 'small';
 export type ButtonShape = 'square' | 'round';
 export default create({

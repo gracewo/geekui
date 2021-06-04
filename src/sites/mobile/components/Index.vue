@@ -3,8 +3,8 @@
     <div class="index-header">
       <img src="../../assets/images/logo-red.png" alt="" srcset="" />
       <div class="info">
-        <h1>NutUI</h1>
-        <p>京东风格的轻量级移动端 Vue 组件库</p>
+        <h1>GeekUI</h1>
+        <p>轻量级移动端 Vue 组件库</p>
       </div>
     </div>
     <div class="index-components">
@@ -18,7 +18,7 @@
                   _package.cName
                 }}</router-link
               >
-              <nut-icon size="14px" color="#979797" name="right"></nut-icon>
+              <gk-icon size="14px" color="#979797" name="right"></gk-icon>
             </li>
           </template>
         </ul>
@@ -45,16 +45,16 @@ export default defineComponent({
   height: 100%;
   width: 100%;
   padding-top: 30px;
-
+  
   &-header {
     display: flex;
     align-items: center;
     padding: 0 34px;
     height: 117px;
     > img {
-      width: 67px;
-      height: 67px;
-      margin-right: 18px;
+      width: 30px;
+      // height: 67px;
+      margin-right: 10px;
       flex-shrink: 0;
     }
     .info {

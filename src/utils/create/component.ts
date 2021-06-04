@@ -1,6 +1,6 @@
 import { App, defineComponent, ComponentOptions } from 'vue';
 export function createComponent(name: string) {
-  const componentName = 'nut-' + name;
+  const componentName = 'gk-' + name;
   return {
     componentName,
     create: function(_component: ComponentOptions) {

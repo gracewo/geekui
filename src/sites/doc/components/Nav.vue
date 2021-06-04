@@ -78,6 +78,18 @@ export default defineComponent({
     border-right: 1px solid #eee;
     overflow: auto;
     padding-left: 35px;
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+      background-color: transparent;
+    }
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: rgba(69, 90, 100, 0.2);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: 6px;
+    }
     ol {
       &.introduce {
         padding-left: 5px;
