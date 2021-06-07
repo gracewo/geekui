@@ -1,8 +1,8 @@
 {
-  "name": "@geekui/geekui",
+  "name": "geek",
   "version": "0.0.1",
   "keywords": [
-    "geekui",
+    "geek",
     "vue",
     "vue3",
     "webpack",

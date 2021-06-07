@@ -12,7 +12,7 @@ export default defineComponent({
   },
   setup(){
     const state = reactive({
-      clientHeight:document.documentElement.clientHeight-100
+      clientHeight:document.documentElement.clientHeight-100>640?640:document.documentElement.clientHeight-100
     })
     return {
       ...toRefs(state)
